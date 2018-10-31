@@ -19,8 +19,8 @@ module Turnip::Steps
     page.on { main_menu_section.choose_menu(text.capitalize) }
   end
 
-  step 'I click :text link on :page page' do |text, page|
-    page.on { navigate_to_link(text.capitalize) }
+  step 'I click :text link on login page' do |text|
+    LoginPage.on { navigate_to_link(text.capitalize) }
   end
 
   # THEN
