@@ -11,7 +11,7 @@ Feature: Sign Up
     Then I should be redirected to sign_up page
 
   @smoke
-  Scenario: visitor can initiate sign up
+  Scenario: user can initiate sign up
     Given login page of web application
     When I click sign link on login page
     Then I should be redirected to sign_up page
